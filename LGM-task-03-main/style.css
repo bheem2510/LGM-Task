@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(249, 243, 243, 0.888);
+    font-size: 1rem;
+}
+
+h1 {
+    padding: 5px;
+    background-color:rgb(19, 201, 159) ;
+    color: rgb(9, 6, 9);
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: fixed;
+}
+
+/* Left Part */
+#details {
+    position: fixed;
+    height: 500px;
+    width: 47%;
+    border-right: 3px solid blueviolet;
+    margin-top: 30px;
+    padding: 3%;
+    padding: 40px;
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    height: 1.7rem;
+    margin-top: 10px;
+    height: fit-content;
+    margin-left: 30px;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+input[type=file]::file-selector-button {
+    background-color: rgb(5, 6, 18);
+    color: rgb(107, 46, 46);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: rgb(29, 22, 236);
+    color: #ebaa1e;
+    border: 2px solid #1e8feb;
+}
+
+.width {
+    width: 70%;
+    padding-left: 5px;
+}
+
+label {
+    text-decoration: underline;
+}
+
+.radios label {
+    text-decoration: none;
+}
+
+.boxes label {
+    text-decoration: none;
+}
+
+#clear {
+    float: right;
+    background-color: rgb(210, 37, 37);
+}
+
+.buttons {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+button {
+    width: 40%;
+    border-radius: 7px;
+    background-color:rgb(119, 172, 232)  ;
+    color: rgb(9, 9, 5);
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 500;
+}
+
+button:hover {
+    background-color: rgb(3, 4, 5);
+    color: aquamarine;
+    border: 2px solid rgb(18, 5, 5);
+}
+
+#inp_male {
+    accent-color: blue;
+}
+
+#inp_female {
+    accent-color: blue;
+}
+
+.checkbox {
+    accent-color: blue;
+}
+
+.head {
+    font-weight: 900;
+}
+
+.radios {
+    margin-left: 100px;
+}
+
+.boxes {
+    margin-left: 100px;
+}
+
+/* Right Box */
+
+#output {
+    position: absolute;
+    width: 80%;
+    height: 450px;
+    padding: 20px;
+    border: radius 20px;
+    ;
+    border: 2px solid aquamarine;
+    float: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+#output::-webkit-scrollbar {
+    width: 15px;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background-color: #334e49;
+    border-radius: 20px;
+    border: 2px solid aquamarine;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info {
+    overflow-wrap: break-word;
+    border: 1px solid black;
+    width: 70%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image {
+    border: 2px solid black;
+    width: 30%;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:915px){
+    img{
+        /* margin-right: 10px; */
+        width:100%;
+        height:100%;
+    }
+}
+@media(max-width:810px){
+    img{
+        /* margin-right: 10px; */
+        width:100%;
+        height:70%;
+        margin-top: 15px;
+    }
+}
+@media(max-width:660px){
+    img{
+        height:50%;
+        margin-top: 30px;
+    }
+}
